@@ -1,0 +1,77 @@
+body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:url("leaf1.jpg");
+}
+.container{
+    width:340px;
+    height:350px;
+    transition:0.6s;
+    animation:anim;
+    animation-duration: 3s;
+    border-radius:15px;
+    box-shadow:0px 0px 12px #000;
+    background: black;
+    color: white;
+}
+@keyframes anim{
+    0%{
+        opacity:0;
+        transform: translateY(50%);
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0%);
+    }
+}
+.content{
+    z-index: 10;
+    padding-top:60px;
+    padding-left:20px;
+
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    padding-left: 20px;
+    width:100%;
+    padding-top:25px;
+   
+}
+.btn1{
+    height:40px;
+    width:90px;
+    border-radius: 15px;
+    border:none;
+    cursor: pointer;
+}
+.btn2{
+    height:40px;
+    margin-left:30px;
+    width:90px;
+    border-radius: 15px;
+    border:none;
+    cursor: pointer;
+}
+.btn1:hover{
+    transition: .6s;
+    background: red;
+    color: white;
+    box-shadow: 0px 0px 12px red;
+}
+.btn2:hover{
+    transition: .6s;
+    background:green;
+    color: white;
+    box-shadow: 0px 0px 12px green;
+}
